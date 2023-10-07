@@ -138,3 +138,13 @@
   width: 20rem;
   height: 20rem;
 }
+
+.active {
+  color: #F80205;
+  text-decoration: none;
+}
+
+.no_active {
+  color: #D2D2D2;
+  text-decoration: none;
+}
