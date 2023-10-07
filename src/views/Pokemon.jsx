@@ -23,14 +23,11 @@ export default function Pokemon() {
         setNombres(nombres);
     };
 
-    console.log(nombres)
+    //console.log(nombres)
 
 
     const irAPersonajes = () => {
-
-        console.log(nombre)
         navigate(`/pokemones/${nombre}`)
-
     };
 
     return (

@@ -16,9 +16,11 @@ function NavBar() {
 
                 <Navbar.Collapse className="justify-content-end">
 
-                    <NavLink className={setActiveClass} to="/">Home </NavLink>
+                    <div className="cont-links-navbar">
+                        <NavLink className={setActiveClass} to="/">Home </NavLink>
 
-                    <NavLink className={setActiveClass} to="/pokemones"> Pokemones </NavLink>
+                        <NavLink className={setActiveClass} to="/pokemones"> Pokemones </NavLink>
+                    </div> 
 
                 </Navbar.Collapse>
 
