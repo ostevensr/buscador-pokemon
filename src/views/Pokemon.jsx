@@ -35,7 +35,7 @@ export default function Pokemon() {
             <h1>Selecciona un Pokemón</h1>
 
             <Form.Select aria-label="Default select example" onChange={({ target }) => setNombre(target.value)}>
-                <option value="">Selecciona un Pokemón</option>
+                <option value="">Pokemones</option>
                 {nombres.map((name, index) => (
                     <option key={index} value={name}>
                         {name.toUpperCase()}

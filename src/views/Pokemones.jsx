@@ -25,18 +25,17 @@ export default function Pokemones() {
             console.error("Error al consultar api:", error);
         }
 
-        console.log(pokemon);
+    };
 
-        console.log(pokemon.stats);
-
-        console.log(pokemon.types.type)
-
+    const letraMayuscula = (palabra) => {
+        return palabra.charAt(0).toUpperCase() + palabra.slice(1);
     };
 
 
     return (
         <div className="poke-resultado">
-            <h1>{nombre}</h1>
+
+            <h1>{letraMayuscula(nombre)}</h1>
 
             {pokemon && (
                 <div className="cont-cards">
@@ -45,11 +44,11 @@ export default function Pokemones() {
                         <Card.Body>
                             {pokemon.stats.map((stat, index) => (
                                 <Card.Text key={index}>
-                                    {stat.stat.name}: {stat.base_stat}
+                                    {letraMayuscula(stat.stat.name)}: {stat.base_stat}
                                 </Card.Text>
                             ))}
                             <Card.Text>
-                                {pokemon.types.map((type) => <Card.Text> {type.type.name} </Card.Text>)}
+                                {pokemon.types.map((type) => <Card.Text> {letraMayuscula(type.type.name)} </Card.Text>)}
                             </Card.Text>
                         </Card.Body>
                     </Card>
